@@ -1,0 +1,20 @@
+<ion-view>    
+    <ion-header-bar  class="custom">
+      
+    </ion-header-bar>
+  <ion-content has-header="true" >
+      
+      <div class="list">
+
+          <a ng-repeat="aire in aires" class="item item-thumbnail-left">
+      <img ng-src="{{aire.imagen}}">
+              <p style="white-space: normal;color:#d00c15;">{{aire.nombre}}</p>
+              <span style="padding-right: 1em;font-family: OpenSans-bold;color: #737373">U${{aire.costo}}</span><button ng-click="godetail({{aire.id}})" class="button button-large button-dark">
+  Ver más
+</button>      
+    </a>
+    </div>
+      
+  </ion-content>
+</ion-view>
+

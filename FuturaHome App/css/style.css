@@ -1,0 +1,117 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face {    
+    font-family: OpenSans-bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@media only screen 
+and (max-width : 470px) 
+and (orientation : portrait){
+ .margentitulo{ top: 4.5em;}
+  img.logo-head{ width: 65%;margin-top: 0.5em;float:left;display: inline-block;}
+   span.input-label.q2 {white-space: normal;}
+   span.input-label.q3 {white-space: normal;}
+    button.button.button-large.button-dark {float: right;margin-right: 1em;}
+    p.ng-binding.titular {white-space: normal;color: #d00c15;text-align: center;font-size: x-large;font-weight: bold;line-height: normal;font-family: OpenSans-bold;}
+    span.ng-binding.detail-precio {color: #d00c15;text-align: center;font-size: xx-large;padding-right: 1em;font-family: OpenSans-bold;}
+    .item-thumbnail-left>img:first-child {max-width: 105px;max-height: 95px;}
+    .item-thumbnail-left {padding-left: 125px;min-height: 110px;}
+    .full-image.detail {width: 100%;max-width: 14em;margin-top: 0em;}
+    p.text-detail.ng-binding {text-align: left;line-height: normal;color:#000;}
+}
+
+body{ font-family: OpenSans;}
+h2 {color:#737373;font-family: OpenSans-bold;width: 40%;}
+a.button.icon-left.ion-arrow-left-a.button-clear.button-dark.activo, a.button.icon-left.ion-ios7-home.button-clear.button-dark.activo {color: #fff;}
+a.button.icon-left.ion-arrow-left-a.button-clear.button-dark.inactivo, a.button.icon-left.ion-ios7-home.button-clear.button-dark.inactivo {color: #444;}
+.bar.bar-header.background {height:80px;}
+.button.button-dark{border: none;padding: 0 5px;min-width: 25px;min-height: 20px;background-color:#dadada;font-size: 15px;line-height: 25px;}
+.nav-bar, .nav-bar a{ font-family: OpenSans-light; color: #fff; border:none; font-size:inherit;}
+.blackground{ background-color:#000;}
+.padding>.list .item.item-input input {padding-right:10px;}
+span.ng-binding {font-size: x-large;}
+.div-nav{float:right;}
+.item.item-body.contenedor {text-align:center;}
+#head-line{color: #fc101a;width: 100%;height: 2px;margin-left: -4.5px;background-color: #fc101a;position: absolute;top: 2.7em;}
+.item-input{padding: 20px 0 20px 16px;}
+.item-input input{font-size: 22pt; color:#737373; font-family:OpenSans-bold;}
+.input-label{color:#737373;min-width:200px;} 
+input[type="number"]{line-height: 32px;}
+
+button.button.icon-right.ion-ios7-search {
+border: none;
+color: #FFF;
+background-color: lightgrey;
+font-size: large;
+}
+.button.icon-right:before {margin-left: 0.5em;}
+
+/* Small Tablets (portrait) ----------- */
+@media only screen 
+and (min-width : 471px) 
+and (max-width : 767px) 
+and (orientation : portrait) {
+    .platform-android.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height:90px}
+    .platform-android.platform-cordova:not(.fullscreen) .has-header {top:90px}
+    img.logo-head{ width: 70%;margin-top: 0.5em;float:left;display: inline-block;} 
+    div#head-line {top: 5em;}
+    a.button.nav{ font-size: x-large;}
+    .bar .title {height: initial;}
+    .bar .button.button-clear.icon-left:before {font-size: 40px;line-height: 65px;}
+    a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:65px !important;max-height:65px !important;}
+    span.input-label{ max-width: 100%;-webkit-box-flex:15;-webkit-flex:15 0 100px;-moz-box-flex:15;-moz-flex:15 0 100px;-ms-flex:15 0 100px;flex:15 0 100px;display: block;font-size: 18px;}
+    button.button.icon-right.ion-ios7-search {font-size: x-large;}
+    
+    /*Second Page*/
+    .item-thumbnail-left, .item-thumbnail-left .item-content {padding-left: 18em;min-height: 130px;}
+    .item-thumbnail-left>img:first-child {position: absolute;top: 0.5em;left: 4em;max-width: 12em;max-height: 7.5em;width: initial;}
+    a.item.item-thumbnail-left {padding-left: 18em;min-height: 8em;padding-right: 2.3em;}
+    p.ng-binding {font-weight: 400;font-size: xx-larger;padding-bottom: 1em;}
+    span.ng-binding {font-size: 50px;}
+    button.button.button-large.button-dark {float: right;padding: 7px 20px;font-size: larger;margin-top: -10px;margin-right: 0.5em;}
+    
+    /*Third Page*/
+    p.ng-binding.titular {white-space: normal;color: #d00c15;text-align: center;font-size: xx-large;font-weight: bold;line-height: normal;font-family: OpenSans-bold;}
+    p.text-detail.ng-binding {text-align: left;line-height: normal;color:#000;margin-top:2em;}    
+    .full-image.detail {width: 75%;margin-bottom: -1em;max-width: 26em;margin-top: 0em;}
+    span.ng-binding.detail-precio {color: #d00c15;text-align: center;font-size: 50px;padding-right: 1em;font-family: OpenSans-bold;}
+    
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+    .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height:110px}
+    .platform-ios.platform-cordova:not(.fullscreen) .has-header {top:110px}
+    img.logo-head{ width: 70%;margin-top: 0.5em;float:left;display: inline-block;} 
+    div#head-line {top: 5.5em;}
+    a.button.nav{ font-size: xx-large;}
+    .bar .title {height: initial;}
+    .bar .button.button-clear.icon-left:before {font-size: 60px;line-height: 65px;}
+    a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:65px !important;max-height:65px !important;}
+    span.input-label{ max-width: 100%;-webkit-box-flex:15;-webkit-flex:15 0 100px;-moz-box-flex:15;-moz-flex:15 0 100px;-ms-flex:15 0 100px;flex:15 0 100px;display: block;font-size: 25px;}
+    button.button.icon-right.ion-ios7-search {font-size: x-large;}
+    
+    /*Second page*/
+    .item-thumbnail-left, .item-thumbnail-left .item-content {padding-left: 18em;min-height: 130px;}
+    .item-thumbnail-left>img:first-child {position: absolute;top: 0.5em;left: 4em;max-width: 12em;max-height: 7.5em;width: initial;}
+    a.item.item-thumbnail-left {padding-left: 18em;min-height: 8em;padding-right: 2.3em;}
+    p.ng-binding {font-weight: 400;font-size: larger;padding-bottom: 1em;}
+    span.ng-binding {font-size: 50px;}
+    button.button.button-large.button-dark {float: right;padding: 7px 20px;font-size: larger;margin-top: -10px;margin-right: 0.5em;}
+    
+    /*Third Page */
+    p.ng-binding.titular {white-space: normal;color: #d00c15;text-align: center;font-size: xx-large;font-weight: bold;line-height: normal;font-family: OpenSans-bold;}
+    p.text-detail.ng-binding {text-align: left;line-height: normal;color:#000;margin-top:2em;}    
+    .full-image.detail {width: 75%;margin-bottom: -1em;max-width: 26em;margin-top: 0em;}
+    span.ng-binding.detail-precio {color: #d00c15;text-align: center;font-size: 50px;padding-right: 1em;font-family: OpenSans-bold;}
+    
+}

@@ -1,0 +1,25 @@
+<ion-view>  
+    <ion-header-bar  class="custom">
+      
+    </ion-header-bar>
+  <ion-content class="margentitulo">
+        <div class="list card">
+
+  <div class="item" style="border:none;">
+      <p class="titular">{{aire.nombre}}</p>
+  </div>
+
+  <div class="item item-body contenedor" style="border:none;">
+      <img class="full-image detail" ng-src="{{aire.imagen}}">
+    <p class="text-detail">
+        {{aire.descripcion}}
+    </p> 
+      <div class="item footer" style="text-align:center;border:none;">
+        <span class="detail-precio">U${{aire.costo}}</span>
+      </div>  
+      
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>

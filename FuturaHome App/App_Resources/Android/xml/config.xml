@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cordova>
+    <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+    <access origin="*"/>
+
+    <content src="index.html" />
+
+    <log level="DEBUG"/>
+    <preference name="useBrowserHistory" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+
+    <!-- For projects that target Apache Cordova 3.0.0 only, this <feature></feature> block ensures that button events and App plugin-related functionality will work as expected. -->
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+
+    <!-- For projects that target Apache Cordova 3.0 and later, comment out or delete the <plugins></plugins> block and its contents. -->
+    <plugins>
+        <plugin name="App" value="org.apache.cordova.App"/>
+        <plugin name="Device" value="org.apache.cordova.Device"/>
+        <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+        <plugin name="Echo" value="org.apache.cordova.Echo" />
+        <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+    </plugins>
+</cordova>
+
