@@ -15,7 +15,19 @@
 and (max-width : 470px) 
 and (orientation : portrait){
  .margentitulo{ top: 4.5em;}
-  img.logo-head{ width: 65%;margin-top: 0.5em;float:left;display: inline-block;}
+  img.logo-head{ margin-top: 0.5em;float:left;display: inline-block;}
+    img.logo-head.first{ width: 25%;}
+    img.logo-head.second{ width: 45%;}
+    .item-input input {font-size: 17pt !important;
+    -webkit-box-flex: 1;
+     -webkit-flex: 1 0 0; 
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    text-align: center;
+    }
+    
    span.input-label.q2 {white-space: normal;}
    span.input-label.q3 {white-space: normal;}
     button.button.button-large.button-dark {float: right;margin-right: 1em;}
@@ -41,7 +53,7 @@ span.ng-binding {font-size: x-large;}
 .item.item-body.contenedor {text-align:center;}
 #head-line{color: #fc101a;width: 100%;height: 2px;margin-left: -4.5px;background-color: #fc101a;position: absolute;top: 2.7em;}
 .item-input{padding: 20px 0 20px 16px;}
-.item-input input{font-size: 22pt; color:#737373; font-family:OpenSans-bold;}
+.item-input input{font-size: 22pt; color:#737373; font-family:OpenSans-bold;text-align: center;}
 .input-label{color:#737373;min-width:200px;} 
 input[type="number"]{line-height: 32px;}
 
@@ -60,7 +72,9 @@ and (max-width : 767px)
 and (orientation : portrait) {
     .platform-android.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height:90px}
     .platform-android.platform-cordova:not(.fullscreen) .has-header {top:90px}
-    img.logo-head{ width: 70%;margin-top: 0.5em;float:left;display: inline-block;} 
+    img.logo-head{ margin-top: 0.2em;float:left;display: inline-block;} 
+    img.logo-head.first{ width: 28%;}
+    img.logo-head.second{ width: 47%;}
     div#head-line {top: 5em;}
     a.button.nav{ font-size: x-large;}
     .bar .title {height: initial;}
@@ -86,17 +100,19 @@ and (orientation : portrait) {
 }
 /* iPads (portrait) ----------- */
 @media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
-and (orientation : portrait) {
+and (min-width : 768px) {
+    .platform-android.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height: 90px;}
+    .platform-android.platform-cordova:not(.fullscreen) .has-header {top:90px}
     .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height:110px}
     .platform-ios.platform-cordova:not(.fullscreen) .has-header {top:110px}
-    img.logo-head{ width: 70%;margin-top: 0.5em;float:left;display: inline-block;} 
-    div#head-line {top: 5.5em;}
+    img.logo-head{ margin-top: 0em;float:left;display: inline-block;} 
+    img.logo-head.first{ width: 25%;}
+    img.logo-head.second{ width: 46%;}
+    div#head-line {top: 5.8em;}
     a.button.nav{ font-size: xx-large;}
     .bar .title {height: initial;}
     .bar .button.button-clear.icon-left:before {font-size: 60px;line-height: 65px;}
-    a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:65px !important;max-height:65px !important;}
+    a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:90px !important;max-height:110px !important;}
     span.input-label{ max-width: 100%;-webkit-box-flex:15;-webkit-flex:15 0 100px;-moz-box-flex:15;-moz-flex:15 0 100px;-ms-flex:15 0 100px;flex:15 0 100px;display: block;font-size: 25px;}
     button.button.icon-right.ion-ios7-search {font-size: x-large;}
     
