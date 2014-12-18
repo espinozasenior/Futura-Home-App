@@ -53,7 +53,8 @@ angular.module('starter.services', [])
       },
     all: function() {
         var total = 0;
-        $http.get("http://futura.esy.es/public/getac/"+btu
+        aires = [];
+        $http.get("http://futurahome.com.uy/app/public/getac/"+btu
                ).success(function (response, data, status, headers, config) {
              total=response.length;
               
@@ -70,7 +71,8 @@ angular.module('starter.services', [])
     },
       allBTU: function() {
         var total = 0;
-        $http.get("http://futura.esy.es/public/getelac/"+btu
+        aires = [];
+        $http.get("http://futurahome.com.uy/app/public/getelac/"+btu
                ).success(function (response, data, status, headers, config) {
              total=response.length;
               
@@ -87,7 +89,8 @@ angular.module('starter.services', [])
     },
       getAcById: function() {
         var total = 0;
-        $http.get("http://futura.esy.es/public/acbyid/"+id
+        aires = [];
+        $http.get("http://futurahome.com.uy/app/public/acbyid/"+id
                ).success(function (response, data, status, headers, config) {
              total=response.length;
               
@@ -103,9 +106,11 @@ angular.module('starter.services', [])
       return aires;        
     },
       setBTU: function(valor){
+          aires = [];
           btu = valor;
       },
       getAc: function(){
+          aires = [];
           var length = aires.length;
           for(var i=0;i<length;i++){
               if(aires[i].id == id){return aires[i];}

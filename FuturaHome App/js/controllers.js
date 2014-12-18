@@ -56,7 +56,7 @@ angular.module('starter.controllers', [])
         $state.go("aire");
     };
     
-     $http.get("http://futura.esy.es/public/getpromo/")
+     $http.get("http://futurahome.com.uy/app/public/getpromo/")
      .success(function (response, data, status, headers, config) {
              total=response.length;              
             console.log(total);
@@ -69,7 +69,7 @@ angular.module('starter.controllers', [])
              if(flag == false){
                 $state.go(Aires.getPath()); 
              }
-         }, 5000);
+         }, 7000);
           }).error(function (data, status, headers, config) {
             console.log('error');
         });
