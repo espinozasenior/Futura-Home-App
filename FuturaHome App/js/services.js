@@ -89,7 +89,6 @@ angular.module('starter.services', [])
     },
       getAcById: function() {
         var total = 0;
-        aires = [];
         $http.get("http://futurahome.com.uy/app/public/acbyid/"+id
                ).success(function (response, data, status, headers, config) {
              total=response.length;
@@ -106,11 +105,10 @@ angular.module('starter.services', [])
       return aires;        
     },
       setBTU: function(valor){
-          aires = [];
           btu = valor;
       },
       getAc: function(){
-          aires = [];
+          
           var length = aires.length;
           for(var i=0;i<length;i++){
               if(aires[i].id == id){return aires[i];}

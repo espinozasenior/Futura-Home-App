@@ -46,11 +46,9 @@ angular.module('starter.controllers', [])
     $scope.aire = [];
     var total = 0;  
     var flag = false;
-    $scope.godetail = function(value){   
-        console.log(value);
-        Aires.setId(value);
-        console.log("------------ ");
-        $scope.aire = Aires.getAcById();
+    $scope.idpromo = 0;
+    $scope.godetail = function(){   
+        console.log("------------ ");        
         flag = true;
         console.log($scope.aire);
         $state.go("aire");
@@ -60,11 +58,14 @@ angular.module('starter.controllers', [])
      .success(function (response, data, status, headers, config) {
              total=response.length;              
             console.log(total);
-              for(var i=0;i<total;i++){
+              for(var i=0;i<total;i++){                  
                   var row ={imagen: response[i].imagen, id_aire: response[i].id_aire};
+                  $scope.idpromo = response[i].id_aire;
       		     $scope.promo.push(row);
       	      }
-            $scope.promo.splice(total,total); 
+            $scope.promo.splice(total,total);
+            Aires.setId($scope.idpromo);
+            $scope.aire = Aires.getAcById();
          $timeout(function(){
              if(flag == false){
                 $state.go(Aires.getPath()); 
@@ -72,8 +73,7 @@ angular.module('starter.controllers', [])
          }, 7000);
           }).error(function (data, status, headers, config) {
             console.log('error');
-        });
-    
+        });    
 })
 
 .controller('MainCtrl', function($state, $ionicPlatform, $location, $scope, $ionicPlatform, $rootScope, Historial) {
