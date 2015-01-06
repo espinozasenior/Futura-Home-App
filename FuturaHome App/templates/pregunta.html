@@ -3,22 +3,26 @@
       
     </ion-header-bar>
   <ion-content has-header="true">
-      <img src="img/banner.png" style="width:100%; margin-bottom: -6px;" >
+      <img ng-src="img/banner.png" style="width:100%; margin-bottom: -6px;" >
       <div class="button-bar nav-bar">
           <a class="button nav" style="background-color: #6dcff6;" ng-click="btu(9000)">9.000 BTU</a>
   <a class="button nav" style="background-color: #00bff3;" ng-click="btu(12000)">12.000 BTU</a>
   <a class="button nav" style="background-color: #00aeef;" ng-click="btu(18000)">18.000 BTU</a>
+  <a class="button nav" style="background-color: #00aeef;" ng-click="btu(24000)">24.000 BTU</a>
 </div>
       <div class="list">
           <label class="item item-input">
+              <img ng-src="img/habitacion-ico.png">
               <span class="input-label q1">Metraje de habitación</span>
               <input type="number" ng-model="metrocubico" ng-value="0">
           </label>
           <label class="item item-input">
+              <img ng-src="img/ventana-ico.png">
               <span class="input-label q2">¿Cuantas ventanas tiene la habitación?</span>
               <input type="number" ng-model="ventanas" ng-value="0">
           </label>
           <label class="item item-input">
+              <img ng-src="img/puerta-ico.png">
               <span class="input-label q3">¿Cuantas puertas tiene la habitación?</span>
               <input type="number" ng-model="puertas" ng-value="0" >
           </label>

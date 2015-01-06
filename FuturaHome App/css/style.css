@@ -18,7 +18,7 @@ and (orientation : portrait){
   img.logo-head{ margin-top: 0.5em;float:left;display: inline-block;}
     img.logo-head.first{ width: 25%;}
     img.logo-head.second{ width: 45%;}
-    .item-input input {font-size: 17pt !important;
+    .item-input input {font-size: 15pt !important;
     -webkit-box-flex: 1;
      -webkit-flex: 1 0 0; 
     -moz-box-flex: 1;
@@ -26,8 +26,9 @@ and (orientation : portrait){
     -ms-flex: 1 0 0;
     flex: 1 0 0;
     text-align: center;
+    padding-right: 5px;
     }
-    
+   a.button.nav{ font-size: xx-small;} 
    span.input-label.q2 {white-space: normal;}
    span.input-label.q3 {white-space: normal;}
     button.button.button-large.button-dark {float: right;margin-right: 1em;}
@@ -56,12 +57,19 @@ span.ng-binding {font-size: x-large;}
 .item-input input {font-size: 22pt; color:#737373; font-family:OpenSans-bold;text-align: center;}
 .input-label{color:#737373;min-width:200px;} 
 input[type="number"]{line-height: 32px;}
-
+label.item.item-input img {width: 2em;margin-right: 0.7em;}
 button.button.icon-right.ion-ios7-search {
-border: none;
-color: #FFF;
-background-color: lightgrey;
+background: #a2d800; /* Old browsers */
+background: -moz-linear-gradient(top,  #a2d800 0%, #80ab00 44%, #638600 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2d800), color-stop(44%,#80ab00), color-stop(100%,#638600)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a2d800 0%,#80ab00 44%,#638600 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a2d800 0%,#80ab00 44%,#638600 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a2d800 0%,#80ab00 44%,#638600 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #a2d800 0%,#80ab00 44%,#638600 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d800', endColorstr='#638600',GradientType=0 ); /* IE6-9 */
 font-size: large;
+color: #FFF;
+border: none;    
 }
 .button.icon-right:before {margin-left: 0.5em;}
 
@@ -76,7 +84,7 @@ and (orientation : portrait) {
     img.logo-head.first{ width: 28%;}
     img.logo-head.second{ width: 47%;}
     div#head-line {top: 5em;}
-    a.button.nav{ font-size: x-large;}
+    a.button.nav{ font-size: large;}
     .bar .title {height: initial;}
     .bar .button.button-clear.icon-left:before {font-size: 40px;line-height: 65px;}
     a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:65px !important;max-height:65px !important;}
@@ -109,7 +117,7 @@ and (min-width : 768px) {
     img.logo-head.first{ width: 25%;}
     img.logo-head.second{ width: 46%;}
     div#head-line {top: 5.8em;}
-    a.button.nav{ font-size: xx-large;}
+    a.button.nav{ font-size: x-large;}
     .bar .title {height: initial;}
     .bar .button.button-clear.icon-left:before {font-size: 60px;line-height: 65px;}
     a.button.icon-left.ion-arrow-left-a.button-clear.button-dark, .button-clear {height:90px !important;max-height:110px !important;}
