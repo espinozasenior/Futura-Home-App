@@ -10,25 +10,26 @@
   <a class="button nav" style="background-color: #00aeef;" ng-click="btu(18000)">18.000 BTU</a>
   <a class="button nav" style="background-color: #00aeef;" ng-click="btu(24000)">24.000 BTU</a>
 </div>
-      <div class="list">
+      <form autocomplete="off" action ng-submit="calcular(metrocubico, ventanas, puertas)" class="list">
           <label class="item item-input">
               <img ng-src="img/habitacion-ico.png">
-              <span class="input-label q1">Metraje de habitación</span>
-              <input type="number" ng-model="metrocubico" ng-value="0">
+              <span class="input-label q1">¿m2 de la habitación?</span>
+              <input type="number" maxlength="4" step="1" ng-model="metrocubico" tabindex="0" ng-value="0" >
           </label>
           <label class="item item-input">
               <img ng-src="img/ventana-ico.png">
-              <span class="input-label q2">¿Cuantas ventanas tiene la habitación?</span>
-              <input type="number" ng-model="ventanas" ng-value="0">
+              <span class="input-label q2">¿Cuántas ventanas?</span>
+              <input type="number" maxlength="4" step="1" ng-model="ventanas" tabindex="1" ng-value="0">
           </label>
           <label class="item item-input">
               <img ng-src="img/puerta-ico.png">
-              <span class="input-label q3">¿Cuantas puertas tiene la habitación?</span>
-              <input type="number" ng-model="puertas" ng-value="0" >
+              <span class="input-label q3">¿Cuántas puertas?</span>
+              <input type="number" maxlength="3" step="1" ng-model="puertas" tabindex="2" ng-value="0">
           </label>
-        </div>     
-      <div class="padding" style="text-align: center;">
-          <button class="button icon-right ion-ios7-search" ng-click="calcular(metrocubico, ventanas, puertas)">Buscar</button>
-      </div>
+          <input type='text' style="opacity:0;margin:0;" tabindex="3" onfocus="calcular(metrocubico, ventanas, puertas)">
+          <div class="padding" style="text-align: center;">
+              <button type="submit" class="button icon-right ion-ios7-search">Buscar</button>
+          </div>
+      </form>     
   </ion-content>
 </ion-view>

@@ -17,17 +17,19 @@
   "WP8Publisher": "",
   "WP8Capabilities": [],
   "WP8Requirements": [],
-  "WP8PublisherID": "",
-  "WP8ProductID": "",
+  "WP8PublisherID": "{d0720e74-062f-44eb-9c94-f076f72ea623}",
+  "WP8ProductID": "{acc85e2c-32be-4659-96b3-a4786b839e4a}",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
   "CorePlugins": [
+    "org.apache.cordova.battery-status",
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar"
   ],
   "AndroidPermissions": [
     "android.permission.ACCESS_COARSE_LOCATION",
-    "android.permission.INTERNET"
+    "android.permission.INTERNET",
+    "android.permission.READ_INPUT_STATE"
   ],
   "DeviceOrientations": [
     "Portrait"
@@ -39,5 +41,6 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "Framework": "Cordova"
+  "Framework": "Cordova",
+  "CordovaPluginVariables": {}
 }

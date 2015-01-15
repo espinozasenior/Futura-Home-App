@@ -1,0 +1,9 @@
+{
+  "CorePlugins": [
+    "org.apache.cordova.battery-status",
+    "org.apache.cordova.keyboard",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
+  ],
+  "CordovaPluginVariables": {}
+}

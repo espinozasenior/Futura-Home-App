@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 // A simple controller that fetches a list of data from a service
 .controller('IndexCtrl', function($scope, $http, $state, $location, $ionicPlatform, $rootScope, Aires, Historial) {
-    $scope.resultado = 0; 
+    $scope.resultado = 0;
     $scope.calcular = function(metro3, ventanas, puertas) {
         $scope.resultado = 230 * metro3 + ((ventanas+puertas) * 476);
         console.log($scope.resultado);
@@ -16,9 +16,8 @@ angular.module('starter.controllers', [])
         Aires.setPath("listacunique");
         $state.go("promo");
         /* $state.go("listacunique"); */
-    }
+    };    
 })
-
 .controller('ListCtrl', function($scope, $stateParams, $http, $state, $location, Aires) {   
     $scope.aires = Aires.all(); 
     $scope.godetail = function(id){
@@ -48,10 +47,13 @@ angular.module('starter.controllers', [])
     var flag = false;
     $scope.idpromo = 0;
     $scope.godetail = function(){   
-        console.log("------------ ");        
-        flag = true;
+        console.log("------------ ");     
         console.log($scope.aire);
-        $state.go("aire");
+        
+        if ($scope.idpromo != 0){ 
+            flag = true;
+           $state.go("aire"); 
+        }        
     };
     
      $http.get("http://futurahome.com.uy/app/public/getpromo/")

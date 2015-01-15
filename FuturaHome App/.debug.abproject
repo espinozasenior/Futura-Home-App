@@ -1,0 +1,8 @@
+{
+  "CorePlugins": [
+    "org.apache.cordova.battery-status",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
+  ],
+  "CordovaPluginVariables": {}
+}

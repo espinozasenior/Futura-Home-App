@@ -1,0 +1,8 @@
+{
+  "ProjectName": "FuturaHome AppMobileTesting",
+  "ProjectGuid": "10953709-5fd2-4d3e-a878-8b0a80fa024d",
+  "projectVersion": 1,
+  "ProjectTypeGuids": "{6319b66f-8dff-4073-91be-3cd48a2fdeb3}",
+  "FrameworkVersion": "1.0",
+  "Framework": "MobileTesting"
+}
