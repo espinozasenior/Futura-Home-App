@@ -5,7 +5,7 @@
   "AppIdentifier": "com.parallax.FuturaHomeApp",
   "DisplayName": "FuturaHome App",
   "Author": "www.parallax.com.ve",
-  "Description": "FuturaHome App",
+  "Description": "Calculadora de BTU para precisar el aire acondicionado que necesitas para tu habitación.",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -42,5 +42,7 @@
     "ID_RESOLUTION_HD720P"
   ],
   "Framework": "Cordova",
-  "CordovaPluginVariables": {}
+  "CordovaPluginVariables": {},
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.parallax.FuturaHomeApp"
 }
