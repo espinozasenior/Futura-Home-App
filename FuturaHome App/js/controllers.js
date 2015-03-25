@@ -115,4 +115,3 @@ angular.module('starter.controllers', [])
         console.log("Content: "+Historial.state());
 	});
 });
-

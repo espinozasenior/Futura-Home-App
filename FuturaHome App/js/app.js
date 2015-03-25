@@ -50,4 +50,3 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
   $urlRouterProvider.otherwise('/inicio');
 
 });
-
