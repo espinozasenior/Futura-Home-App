@@ -3,10 +3,10 @@
   "ProjectGuid": "23193ba0-c6b3-4608-85b5-21badd986bbb",
   "projectVersion": 1,
   "AppIdentifier": "com.contactoparallaxcomve.futuraapp",
-  "DisplayName": "FuturaHome App",
+  "DisplayName": "Vivax App",
   "Author": "www.parallax.com.ve",
   "Description": "Calculadora de BTU para precisar el aire acondicionado que necesitas para tu habitación.",
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.1",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
